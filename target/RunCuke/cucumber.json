@@ -1,0 +1,130 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6267929200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "User should create account successfully",
+        "description": "",
+        "id": "register;user-should-create-account-successfully",
+        "after": [
+          {
+            "result": {
+              "duration": 829124700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 172084800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on homepage",
+            "match": {
+              "location": "LoginSteps.iAmOnHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 32000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I click on register link",
+            "match": {
+              "location": "RegisterSteps.iClickOnRegisterLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4770700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enters following users details",
+            "match": {
+              "location": "RegisterSteps.iEntersFollowingUsersDetails(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Jay",
+                  "Vaghani",
+                  "jay@gmail.com",
+                  "07878451263",
+                  "Harrow"
+                ],
+                "line": 7
+              },
+              {
+                "cells": [
+                  "Amit",
+                  "Kathrotiya",
+                  "amit@gmail.com",
+                  "07878451285",
+                  "Luton"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "Aum",
+                  "Vaghani",
+                  "aum@gmail.com",
+                  "07878454585",
+                  "Harrow"
+                ],
+                "line": 9
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 24100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "registration successful",
+            "match": {
+              "location": "RegisterSteps.registrationSuccessful()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@Register"
+          }
+        ]
+      }
+    ],
+    "name": "Register",
+    "description": "",
+    "id": "register",
+    "keyword": "Feature",
+    "uri": "register.feature"
+  }
+]

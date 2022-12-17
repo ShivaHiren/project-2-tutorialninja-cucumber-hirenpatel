@@ -15,9 +15,10 @@ import org.junit.runner.RunWith;
         glue = "com/nopcommerce/demo/cucumber",
         plugin = {"pretty", "html:target/cucumber-report/cucumber.html",
                 "com.cucumber.listener.ExtentCucumberFormatter:target/Extent_Reports/report.html",
-                "json:target/RunCuke/cucumber.json"}
+                "json:target/RunCuke/cucumber.json"},
+        tags = "@Register"
 )
-public class TestRunner {
+public class RegistrationRunner {
 
     @AfterClass
     public static void setUp() {
