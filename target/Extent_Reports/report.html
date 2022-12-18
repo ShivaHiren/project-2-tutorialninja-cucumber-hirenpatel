@@ -52,7 +52,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Dec 17, 2022 03:39:10 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Dec 18, 2022 01:02:03 PM</span>
 				</a>
 			</li>
 			<li>
@@ -90,7 +90,7 @@
 					<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@Register</a></li>
+					<li><a href='#'>@regression</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -153,7 +153,7 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -168,7 +168,7 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>4</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>9</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -187,19 +187,16 @@
 				
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Register</span>
-						<span class='test-time'>Dec 17, 2022 03:39:10 PM</span>
+						<span class='test-name'>Login Test</span>
+						<span class='test-time'>Dec 18, 2022 01:02:03 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenario node' test-id='2' status='pass'>
-	<div class='category-list'>
-		<span class='category label white-text'>@Register</span>
-	</div>
-	<span class='duration right label'>0h 0m 6s+595ms</span>
+	<span class='duration right label'>0h 0m 6s+552ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
-		<span class="desc-text">User should create account successfully</span>
+		<span class="desc-text">User should navigate to login page successfully</span>
 	</div>
 	<ul class='steps'>
 		<li test-id='3' class='node given pass' status='pass'>
@@ -214,24 +211,72 @@
 			
 			<b>When</b>
 			
-			<span class="bdd-step-name">When I click on register link</span>
+			<span class="bdd-step-name">When I click on login link</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='5' class='node and pass' status='pass'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And I enters following users details</span>
-				<div class='pre'><table><tr><td>Jay</td><td>Vaghani</td><td>jay@gmail.com</td><td>07878451263</td><td>Harrow</td></tr><tr><td>Amit</td><td>Kathrotiya</td><td>amit@gmail.com</td><td>07878451285</td><td>Luton</td></tr><tr><td>Aum</td><td>Vaghani</td><td>aum@gmail.com</td><td>07878454585</td><td>Harrow</td></tr></table></div>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='6' class='node then pass' status='pass'>
+		<li test-id='5' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
-			<span class="bdd-step-name">Then registration successful</span>
+			<span class="bdd-step-name">Then I should navigate to login page successfully</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='6' status='pass'>
+	<span class='duration right label'>0h 0m 3s+334ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">User should login successfully with valid credentials</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='7' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given I am on homepage</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='8' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When I click on login link</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='9' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And I enter email "primeeight@gmail.com"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='10' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And I enter password "abc123"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='11' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And I click on login button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='12' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then I should login successfully</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -291,7 +336,7 @@
 				
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@Register</span>
+						<span class='category-name'>@regression</span>
 						<span class='category-status right'>
 							<span class='label pass'>1</span>
 						</span>
@@ -314,8 +359,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Dec 17, 2022 03:39:10 PM</td>
-										<td class='linked' test-id='2'>Register.User should create account successfully</td>
+										<td>Dec 18, 2022 01:02:03 PM</td>
+										<td class='linked' test-id='1'>Login Test</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -350,31 +395,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>9</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Dec 17, 2022 03:39:10 PM</div>
+					<div class='panel-lead'>Dec 18, 2022 01:02:03 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Dec 17, 2022 03:39:18 PM</div>
+			 		<div class='panel-lead'>Dec 18, 2022 01:02:14 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>7,633ms</div>
+					<div class='panel-lead'>11,233ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -388,7 +433,7 @@
 						</tr>
 							<tr>
 								<td>User Name</td>
-								<td>jayen</td>
+								<td>LAPTOP-04B1LE1H$</td>
 							</tr>
 							<tr>
 								<td>Time Zone</td>
@@ -426,7 +471,7 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@Register</td>
+							<td>@regression</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -455,7 +500,7 @@
 				skipParent: 0,
 				exceptionsParent: 0,
 				
-				passChild: 1,
+				passChild: 2,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
@@ -464,7 +509,7 @@
 				infoChild: 0,
 				exceptionsChild: 0,
 				
-				passGrandChild: 4,
+				passGrandChild: 9,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,

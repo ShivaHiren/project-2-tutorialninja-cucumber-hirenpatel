@@ -1,12 +1,18 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
+        "comments": [
+          {
+            "line": 5,
+            "value": "#@smoke"
+          }
+        ],
         "before": [
           {
             "result": {
-              "duration": 6267929200,
+              "duration": 5694092600,
               "status": "passed"
             },
             "match": {
@@ -14,14 +20,14 @@
             }
           }
         ],
-        "line": 3,
-        "name": "User should create account successfully",
+        "line": 6,
+        "name": "User should navigate to login page successfully",
         "description": "",
-        "id": "register;user-should-create-account-successfully",
+        "id": "login-test;user-should-navigate-to-login-page-successfully",
         "after": [
           {
             "result": {
-              "duration": 829124700,
+              "duration": 609801600,
               "status": "passed"
             },
             "match": {
@@ -34,10 +40,10 @@
         "steps": [
           {
             "result": {
-              "duration": 172084800,
+              "duration": 108481599,
               "status": "passed"
             },
-            "line": 4,
+            "line": 7,
             "name": "I am on homepage",
             "match": {
               "location": "LoginSteps.iAmOnHomepage()"
@@ -46,85 +52,163 @@
           },
           {
             "result": {
-              "duration": 32000,
+              "duration": 611105101,
               "status": "passed"
             },
-            "line": 5,
-            "name": "I click on register link",
+            "line": 8,
+            "name": "I click on login link",
             "match": {
-              "location": "RegisterSteps.iClickOnRegisterLink()"
+              "location": "LoginSteps.iClickOnLoginLink()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 4770700,
+              "duration": 49472400,
               "status": "passed"
             },
-            "line": 6,
-            "name": "I enters following users details",
+            "line": 9,
+            "name": "I should navigate to login page successfully",
             "match": {
-              "location": "RegisterSteps.iEntersFollowingUsersDetails(DataTable)"
+              "location": "LoginSteps.iShouldNavigateToLoginPageSuccessfully()"
             },
-            "rows": [
-              {
-                "cells": [
-                  "Jay",
-                  "Vaghani",
-                  "jay@gmail.com",
-                  "07878451263",
-                  "Harrow"
-                ],
-                "line": 7
-              },
-              {
-                "cells": [
-                  "Amit",
-                  "Kathrotiya",
-                  "amit@gmail.com",
-                  "07878451285",
-                  "Luton"
-                ],
-                "line": 8
-              },
-              {
-                "cells": [
-                  "Aum",
-                  "Vaghani",
-                  "aum@gmail.com",
-                  "07878454585",
-                  "Harrow"
-                ],
-                "line": 9
-              }
-            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 11,
+            "value": "#@Smoke @sanity @bug"
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 2307678500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "User should login successfully with valid credentials",
+        "description": "",
+        "id": "login-test;user-should-login-successfully-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 606469900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 20299,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I am on homepage",
+            "match": {
+              "location": "LoginSteps.iAmOnHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 554554299,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I click on login link",
+            "match": {
+              "location": "LoginSteps.iClickOnLoginLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 67266000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I enter email \"primeeight@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "primeeight@gmail.com",
+                  "offset": 15
+                }
+              ],
+              "location": "LoginSteps.iEnterEmail(String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 24100,
+              "duration": 54523800,
               "status": "passed"
             },
-            "line": 10,
-            "name": "registration successful",
+            "line": 16,
+            "name": "I enter password \"abc123\"",
             "match": {
-              "location": "RegisterSteps.registrationSuccessful()"
+              "arguments": [
+                {
+                  "val": "abc123",
+                  "offset": 18
+                }
+              ],
+              "location": "LoginSteps.iEnterPassword(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 341471400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I click on login button",
+            "match": {
+              "location": "LoginSteps.iClickOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I should login successfully",
+            "match": {
+              "location": "LoginSteps.iShouldLoginSuccessfully()"
             },
             "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 2,
-            "name": "@Register"
           }
         ]
       }
     ],
-    "name": "Register",
-    "description": "",
-    "id": "register",
+    "name": "Login Test",
+    "description": "As user I want to login into nop commerce website",
+    "id": "login-test",
     "keyword": "Feature",
-    "uri": "register.feature"
+    "uri": "login.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@regression"
+      }
+    ]
   }
 ]
